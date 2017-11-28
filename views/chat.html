@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Messagerie Dubois</title>
+    <title>Black-board</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.0/socket.io.min.js"></script>
@@ -27,7 +27,7 @@
     <header>
       <div class="container">
         <img class="u-pull-left feather" src="img/feather100x100.png" width="40" height="40" alt="" />
-        <h3 class="u-pull-left">Messagerie Dubois</h3>
+        <h3 class="u-pull-left">Black-board</h3>
         <div id="disconnect" class="u-pull-right header-button"></div>
         <div id="all-users" class="u-pull-right header-button"><i class="fa fa-user" aria-hidden="true"></i></div>
       </div>
@@ -50,11 +50,11 @@
     <div id="form">
       <div class="container">
         <form action="/" method="post" id="formulaire_chat">
-          <textarea class="u-full-width" id="message" placeholder="Votre message..."></textarea>
+          <textarea class="u-full-width" id="message" placeholder="Your message..."></textarea>
           <div class="row u-full-width" style="display: inline-flex;">
-            <input class="button-primary u-pull-left" type="submit" id="envoi_message" value="Envoyer" />
+            <input class="button-primary u-pull-left" type="submit" id="envoi_message" value="send" />
             <p class="txt-form">
-              Insérez <b>@important</b> pour plus de lisibilité.
+              Use @important for more readability.
             </p>
           </div>
         </form>

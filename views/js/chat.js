@@ -49,7 +49,7 @@ $(document).ready(function(){
       } else if(important >= 0) {
         $('#zone_chat').append('<p class="important"><strong class="important">' + thisPseudo + ' <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       } else if (thisPseudo == pseudo) {
-        $('#zone_chat').append('<p class="p-my-user"><strong class="my">' + thisPseudo + ' (Moi-même) <i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
+        $('#zone_chat').append('<p class="p-my-user"><strong class="my">' + thisPseudo + ' (Me) <i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       } else {
         $('#zone_chat').append('<p class="p-other-users"><strong class="other">' + thisPseudo + ' ' + '<i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       }
@@ -59,7 +59,7 @@ $(document).ready(function(){
       } else if(important >= 0) {
         $('#zone_chat').prepend('<p class="important"><strong class="important">' + thisPseudo + ' <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       } else if (thisPseudo == pseudo) {
-        $('#zone_chat').prepend('<p class="p-my-user"><strong class="my">' + thisPseudo + ' (Moi-même) <i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
+        $('#zone_chat').prepend('<p class="p-my-user"><strong class="my">' + thisPseudo + ' (Me) <i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       } else {
         $('#zone_chat').prepend('<p class="p-other-users"><strong class="other">' + thisPseudo + ' ' + '<i class="fa fa-comment-o" aria-hidden="true"></i></strong></br>' + message + '<span class="date"> ' + dateMessage + '</span></p>');
       }
@@ -81,7 +81,7 @@ $(document).ready(function(){
     $.post(location + '/connected', false, function(a) {
       var allConnected = JSON.parse(a);
       allConnected.sort();
-      $('#list-users-ul').append('<li class="legend">'+ (allConnected.length) +' utilisateurs connectés</li>');
+      $('#list-users-ul').append('<li class="legend">'+ (allConnected.length) +' users connected</li>');
       allConnected.forEach(function(element) {
         $('#list-users-ul').append('<li class="connected '+ element.replace(" ", "_") +'"><span style="padding-left: 7px;"class="connected-status"><i class="fa fa-plug" aria-hidden="true"></i></span><span style="padding-left: 5px;">' + element + '</span></li>');
       });

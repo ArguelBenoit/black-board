@@ -1,0 +1,34 @@
+{
+  "name": "black-board",
+  "version": "1.0.0",
+  "description": "Black-board is a private enterprise chat room",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "npm install && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArguelBenoit/black-board.git"
+  },
+  "author": "Benoit Arguel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArguelBenoit/black-board/issues"
+  },
+  "homepage": "https://github.com/ArguelBenoit/black-board#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "ent": "^2.2.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "moment": "^2.19.2",
+    "redis": "^2.8.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-config-lightstream": "^1.1.0"
+  }
+}

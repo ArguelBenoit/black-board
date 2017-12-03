@@ -1,5 +1,5 @@
 # black-board
-Black-board is a private enterprise chat room.
+Black-board is a private chat room for enterprise.
 
 ## install
 Use docker-compose and run into repository :
